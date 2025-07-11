@@ -11,7 +11,7 @@ module.exports = {
     user: process.env.DB_USER || 'postgres',
     host: process.env.DB_HOST || 'localhost',
     database: process.env.DB_NAME || 'empresa',
-    password: process.env.DB_PASSWORD || 'DeveLoper-2024', // Cambia esto en producción
+    password: process.env.DB_PASSWORD, 
     port: process.env.DB_PORT || 5432,
     //ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false, // Para producción con SSL
   },
