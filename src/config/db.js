@@ -1,7 +1,7 @@
 const { Pool } = require("pg");
 const { DB } = require("../../config");
 
-const pool = new Pool({DB});
+const pool = new Pool(DB);
 
 // Verificar conexión a la base de datos al iniciar
 const connectDB = async () => {
